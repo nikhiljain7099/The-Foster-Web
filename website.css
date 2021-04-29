@@ -1,0 +1,274 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, hr, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, select, input, button, textarea, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: normal;
+  font-weight: inherit;
+  font-style: normal;
+}
+
+.main {
+  background: linear-gradient(156deg, rgba(44, 62, 80, 0.932) 0%, rgba(189, 195, 199, 0.849) 91%), url(/photos/office-730681_1920.jpg);
+  background-size: cover;
+  margin-top: 10vh;
+}
+
+.main {
+  padding: 2% 0;
+  -webkit-perspective: 1200px;
+          perspective: 1200px;
+}
+
+.main .form .formwrap {
+  width: 500px;
+  margin: auto;
+  margin-top: 7vh;
+  position: relative;
+  -webkit-transition: all 0.8s cubic-bezier(1, 0, 0, 1);
+  transition: all 0.8s cubic-bezier(1, 0, 0, 1);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  z-index: 5;
+}
+
+.main .form .formwrap.go {
+  -webkit-transform: scaleX(0.9) translateY(270px);
+          transform: scaleX(0.9) translateY(270px);
+  z-index: 0;
+}
+
+.main .form .submit {
+  margin: 30px auto;
+  color: #fff;
+  background-color: #1f5bff;
+  border: 0;
+  border-radius: 3px;
+  width: 200px;
+  padding: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  display: block;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.main .form .submit.active {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.main .form .submit:hover {
+  letter-spacing: 3px;
+  width: 230px;
+}
+
+.main .form fieldset {
+  padding: 20px 40px;
+  background-color: #fff;
+  border-radius: 3px;
+  margin-top: -4px;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+}
+
+.main .form fieldset label, .main .form fieldset input, .main .form fieldset textarea {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  width: 100%;
+  letter-spacing: 0.05em;
+  position: relative;
+  z-index: 2;
+}
+
+.main .form fieldset label {
+  color: #8a9daf;
+  font-size: 14px;
+}
+
+.main .form fieldset input, .main .form fieldset textarea {
+  padding: 5px;
+  color: #3e5e7c;
+  border-bottom: 1px solid #c5e1e3;
+}
+
+.main .form fieldset textarea {
+  height: 2em;
+  border-bottom: 0;
+}
+
+.main .form fieldset:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  z-index: 1;
+}
+
+.main .form fieldset:nth-child(1) {
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  z-index: 3;
+}
+
+.main .form .fold {
+  position: relative;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+  z-index: 3;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.main .letterBox {
+  width: 500px;
+  height: 280px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #304c95;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  opacity: 0;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.main .letterBox.active.fold .top {
+  -webkit-transform: translateY(-100%) rotateX(-175deg);
+          transform: translateY(-100%) rotateX(-175deg);
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+}
+
+.main .letterBox .top {
+  position: absolute;
+  width: 100%;
+  height: 58%;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 2;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+  -webkit-transform: translateY(-98%);
+          transform: translateY(-98%);
+  -webkit-transform: translateY(-98%) rotateX(175deg);
+          transform: translateY(-98%) rotateX(175deg);
+  -webkit-transition: all 0.6s 0.3s ease-out;
+  transition: all 0.6s 0.3s ease-out;
+}
+
+.main .letterBox .top:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-right: 250px solid transparent;
+  border-left: 250px solid transparent;
+  border-bottom: 140px solid #284083;
+}
+
+.main .letterBox .front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.main .letterBox .front:before, .main .letterBox .front:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.main .letterBox .front:before {
+  border-right: 500px solid transparent;
+  border-bottom: 280px solid #4a6cc7;
+}
+
+.main .letterBox .front:after {
+  border-left: 500px solid transparent;
+  border-bottom: 280px solid #3e60b6;
+}
+
+.main.active fieldset:nth-child(1) {
+  -webkit-transform: rotateX(-179deg) translateY(4px);
+          transform: rotateX(-179deg) translateY(4px);
+  -webkit-box-shadow: 0 0 2px #ddd;
+          box-shadow: 0 0 2px #ddd;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.main.active .fold {
+  -webkit-transform: rotateX(-179deg) translateY(4px);
+          transform: rotateX(-179deg) translateY(4px);
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.main.active .letterBox {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.main.active .letterBox .top {
+  -webkit-transform: translateY(-98%);
+          transform: translateY(-98%);
+}
+
+.main.active.go {
+  -webkit-perspective: 0px;
+          perspective: 0px;
+}
+
+.main.active.go .letterBox {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transition: all 0.6s cubic-bezier(1, 0, 0, 1);
+  transition: all 0.6s cubic-bezier(1, 0, 0, 1);
+}
+
+.main.active.go .formwrap {
+  opacity: 0;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transition: all 0.1s cubic-bezier(1, 0, 0, 1);
+  transition: all 0.1s cubic-bezier(1, 0, 0, 1);
+}
+/*# sourceMappingURL=website.css.map */
