@@ -166,7 +166,7 @@
 .svg-wrapper:hover .shape {
   stroke-width: 2px;
   stroke-dashoffset: 0;
-  stroke-dasharray: 760;
+  stroke-dasharray: 760; 
 }
 @media only screen and (max-width: 620px) {
   .svg-wrapper {
